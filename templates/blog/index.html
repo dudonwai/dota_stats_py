@@ -3,8 +3,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{% block head %}
-
 <head>
 
     <meta charset="utf-8">
@@ -36,8 +34,6 @@
 
 </head>
 
-{% endblock %}
-
 <body>
 
     <div id="wrapper">
@@ -54,8 +50,6 @@
                 </button>
                 <a class="navbar-brand" href="index.html">Dota 2 Stats</a>
             </div>
-
-            {% block navigation %}
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -100,183 +94,135 @@
                                 <a href="0index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
                             </li>
                         </ul>
-
-                    </ul>
-                </div>
+                    </li>
+                </ul>
+            </div>
             <!-- /.navbar-collapse -->
 
-            {% endblock %}
-
-            </div>
             <!-- /.container -->
         </nav>
-    </div>
-    {% block header %}
 
-    <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('static/img/home-bg.jpg')">
-
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">
-                    Dota 2 <small>Statistics</small>
-                </h1>
-                <ol class="breadcrumb">
-                    <li class="active">
-                        <i class="fa fa-dashboard"></i> Statistics
-                    </li>
-                </ol>
-            </div>
-        </div>
-
-    </header>
-
+    </div> 
     
-    {% endblock %}
 
-    {% block maincontent %}
 
-    <hr>
+    <div id="page-wrapper">
+
+        <div class="container-fluid">
+
+            <!-- Page Heading -->
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">
+                        Dota 2 <small>Statistics</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li class="active">
+                            <i class="fa fa-dashboard"></i> Statistics
+                        </li>
+                    </ol>
+                </div>
+            </div>
+ 
+            <hr>
 
     <!-- Main Content -->
-                    <div class="row">
-                    <div class="col-lg-12">
-                        <div class="alert alert-info alert-dismissable">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                            <i class="fa fa-info-circle"></i>  <strong>Like Dota 2 Stats?</strong> Give us <a href="http://startbootstrap.com/template-overviews/sb-admin-2" class="alert-link">a shout</a> and tell us how much :)
-                        </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="alert alert-info alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <i class="fa fa-info-circle"></i>  <strong>Like Dota 2 Stats?</strong> Give us <a href="http://startbootstrap.com/template-overviews/sb-admin-2" class="alert-link">a shout</a> and tell us how much :)
                     </div>
                 </div>
-                <!-- /.row -->
+            </div>
+            <!-- /.row -->
 
-                <div class="row">
-                    <div class="col-lg-4 col-md-4">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-comments fa-3x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">Players</div>
-                                    </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-comments fa-3x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">Players</div>
                                 </div>
                             </div>
-                            <a href="#">
-                                <div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="panel panel-green">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-tasks fa-3x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">Heroes</div>
-                                    </div>
-                                </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
                             </div>
-                            <a href="#">
-                                <div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="panel panel-yellow">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-shopping-cart fa-3x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">Items</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#">
-                                <div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
-                        </div>
+                        </a>
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="panel panel-green">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-tasks fa-3x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">Heroes</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="panel panel-yellow">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-shopping-cart fa-3x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">Items</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
        <!-- Features Section -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Player Statistics</h2>
-            </div>
-            <div class="col-md-1">
-            </div>
-            <div class="col-lg-4">
-                <p>Type in a player's user name to discover their past performance, their favorite items and best heroes</p>
-            </div>
-            <div class="col-lg-6">
-                <p>SEARCH BOX</p>
-            </div>
-        </div>
-
-    </div>
-    <hr>
-
-    {% endblock %}
-
-    {% block footer %}
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
-                        <li>
-                            <a href="https://twitter.com/DudonWai">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/dudon.wai">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/dudonwai">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted">Copyright &copy; Dudon Wai 2015</p>
+                <div class="col-lg-12">
+                    <h2 class="page-header">Player Statistics</h2>
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-lg-4">
+                    <p>Type in a player's user name to discover their past performance, their favorite items and best heroes</p>
+                </div>
+                <div class="col-lg-6">
+                    <p>SEARCH BOX</p>
                 </div>
             </div>
+
         </div>
-    </footer>
-
-    {% endblock %}
-
+    </div>
+    
+    <hr>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
