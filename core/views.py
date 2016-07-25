@@ -10,8 +10,6 @@ import core.models as coremodels
 class LandingView(TemplateView):
 	template_name = "blog/index.html"
 
-
-
 # Template for About, Archive, Contact
 
 class BasicView(TemplateView):
