@@ -14,16 +14,16 @@
     <title>Dota 2 Stats</title>
 
       <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/sb-admin.css" rel="stylesheet">
+    <link href="{% static "css/sb-admin.css" %}" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
-    <link href="css/plugins/morris.css" rel="stylesheet">
+    <link href="{% static "css/plugins/morris.css" %}" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="{% static "font-awesome/css/font-awesome.min.css" %}" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -48,7 +48,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Dota 2 Stats</a>
+                <a class="navbar-brand" href="{% static "index.html" %}">Dota 2 Stats</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -70,28 +70,28 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Templates <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
-                                <a href="0index.html"><i class="fa fa-fw fa-dashboard"></i> Home Page</a>
+                                <a href="{% static "0index.html" %}"><i class="fa fa-fw fa-dashboard"></i> Home Page</a>
                             </li>                            
                             <li>
-                                <a href="0charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
+                                <a href="{% static "0charts.html" %}"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
                             </li>
                             <li>
-                                <a href="0tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
+                                <a href="{% static "0tables.html" %}"><i class="fa fa-fw fa-table"></i> Tables</a>
                             </li>
                             <li>
-                                <a href="0forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
+                                <a href="{% static "0forms.html" %}"><i class="fa fa-fw fa-edit"></i> Forms</a>
                             </li>
                             <li>
-                                <a href="0bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
+                                <a href="{% static "0bootstrap-elements.html" %}"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
                             </li>
                             <li>
-                                <a href="0bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
+                                <a href="{% static "0bootstrap-grid.html" %}"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
                             </li>
                             <li>
-                                <a href="0blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
+                                <a href="{% static "0blank-page.html" %}"><i class="fa fa-fw fa-file"></i> Blank Page</a>
                             </li>
                             <li>
-                                <a href="0index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
+                                <a href="{% static "0index-rtl.html" %}"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
                             </li>
                         </ul>
                     </li>
